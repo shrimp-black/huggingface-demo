@@ -20,4 +20,5 @@ jobs:
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
+        run: git push --force https://Iris66:$HF@huggingface.co/spaces/Iris66/demo
         run: git push --force https://huggingface.co/spaces/Iris66/demo main
